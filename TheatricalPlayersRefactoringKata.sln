@@ -1,28 +1,91 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheatricalPlayersRefactoringKata", "TheatricalPlayersRefactoringKata\TheatricalPlayersRefactoringKata.csproj", "{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheatricalPlayersRefactoringKata.Tests", "TheatricalPlayersRefactoringKata.Tests\TheatricalPlayersRefactoringKata.Tests.csproj", "{2AFBF20D-3D97-46EC-B506-8B7C82598951}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0 - Presentation", "1.0 - Presentation", "{739E7EE1-F8DF-4D21-B8AD-7488081D50C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0 - Application", "2.0 - Application", "{0AFE1875-F01E-4ED5-A352-E4BD41248E61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.0 - Domain", "3.0 - Domain", "{C50470EC-01C9-4167-98DE-EBA088B84FA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.0 - Infrastructure", "4.0 - Infrastructure", "{2A519D54-8AA7-4EC3-B8E1-81CFA2D75D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheatricalPlayersRefactoringKata.WebApi", "TheatricalPlayersRefactoringKata.WebApi\TheatricalPlayersRefactoringKata.WebApi.csproj", "{5DF5D516-D6A6-4C57-A328-70EA30172B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheatricalPlayersRefactoringKata.Application", "TheatricalPlayersRefactoringKata.Application\TheatricalPlayersRefactoringKata.Application.csproj", "{83C7470B-CA0D-4D4D-BE32-BAD6F3FF1686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheatricalPlayersRefactoringKata.Domain", "TheatricalPlayersRefactoringKata.Domain\TheatricalPlayersRefactoringKata.Domain.csproj", "{9F55FE3F-47BD-4D69-B9C3-04C250F017B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheatricalPlayersRefactoringKata.Infrastructure", "TheatricalPlayersRefactoringKata.Infrastructure\TheatricalPlayersRefactoringKata.Infrastructure.csproj", "{98FED7CE-BB66-4A9B-B54A-412382FB64C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{24E2261B-9852-416E-B17C-AA58A06F77F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentations", "Presentations", "{6512A5CA-B686-4BE4-9BEA-D997A779466F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheatricalPlayersRefactoringKata.WebApi.Tests", "TheatricalPlayersRefactoringKata.WebApi.Tests\TheatricalPlayersRefactoringKata.WebApi.Tests.csproj", "{03539E85-4432-4C0D-A788-5624C739BDF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{2470A9FE-EA92-43FD-A752-ECF554C73C0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheatricalPlayersRefactoringKata.Application.Tests", "TheatricalPlayersRefactoringKata.Application.Tests\TheatricalPlayersRefactoringKata.Application.Tests.csproj", "{0B99462A-EEEC-47C5-B3C7-8DA46BBD1F75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AFBF20D-3D97-46EC-B506-8B7C82598951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AFBF20D-3D97-46EC-B506-8B7C82598951}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AFBF20D-3D97-46EC-B506-8B7C82598951}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AFBF20D-3D97-46EC-B506-8B7C82598951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DF5D516-D6A6-4C57-A328-70EA30172B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF5D516-D6A6-4C57-A328-70EA30172B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF5D516-D6A6-4C57-A328-70EA30172B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF5D516-D6A6-4C57-A328-70EA30172B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C7470B-CA0D-4D4D-BE32-BAD6F3FF1686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C7470B-CA0D-4D4D-BE32-BAD6F3FF1686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C7470B-CA0D-4D4D-BE32-BAD6F3FF1686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C7470B-CA0D-4D4D-BE32-BAD6F3FF1686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F55FE3F-47BD-4D69-B9C3-04C250F017B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F55FE3F-47BD-4D69-B9C3-04C250F017B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F55FE3F-47BD-4D69-B9C3-04C250F017B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F55FE3F-47BD-4D69-B9C3-04C250F017B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FED7CE-BB66-4A9B-B54A-412382FB64C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FED7CE-BB66-4A9B-B54A-412382FB64C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FED7CE-BB66-4A9B-B54A-412382FB64C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FED7CE-BB66-4A9B-B54A-412382FB64C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03539E85-4432-4C0D-A788-5624C739BDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03539E85-4432-4C0D-A788-5624C739BDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03539E85-4432-4C0D-A788-5624C739BDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03539E85-4432-4C0D-A788-5624C739BDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B99462A-EEEC-47C5-B3C7-8DA46BBD1F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B99462A-EEEC-47C5-B3C7-8DA46BBD1F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B99462A-EEEC-47C5-B3C7-8DA46BBD1F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B99462A-EEEC-47C5-B3C7-8DA46BBD1F75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{739E7EE1-F8DF-4D21-B8AD-7488081D50C0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0AFE1875-F01E-4ED5-A352-E4BD41248E61} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C50470EC-01C9-4167-98DE-EBA088B84FA8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2A519D54-8AA7-4EC3-B8E1-81CFA2D75D37} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5DF5D516-D6A6-4C57-A328-70EA30172B98} = {739E7EE1-F8DF-4D21-B8AD-7488081D50C0}
+		{83C7470B-CA0D-4D4D-BE32-BAD6F3FF1686} = {0AFE1875-F01E-4ED5-A352-E4BD41248E61}
+		{9F55FE3F-47BD-4D69-B9C3-04C250F017B8} = {C50470EC-01C9-4167-98DE-EBA088B84FA8}
+		{98FED7CE-BB66-4A9B-B54A-412382FB64C8} = {2A519D54-8AA7-4EC3-B8E1-81CFA2D75D37}
+		{6512A5CA-B686-4BE4-9BEA-D997A779466F} = {24E2261B-9852-416E-B17C-AA58A06F77F7}
+		{03539E85-4432-4C0D-A788-5624C739BDF2} = {6512A5CA-B686-4BE4-9BEA-D997A779466F}
+		{2470A9FE-EA92-43FD-A752-ECF554C73C0B} = {24E2261B-9852-416E-B17C-AA58A06F77F7}
+		{0B99462A-EEEC-47C5-B3C7-8DA46BBD1F75} = {2470A9FE-EA92-43FD-A752-ECF554C73C0B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB6A2CB1-7C28-414F-9499-4D721F51C3E0}
 	EndGlobalSection
 EndGlobal
