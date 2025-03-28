@@ -79,7 +79,6 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
                 Performance = new Performance
                 {
                     Id = Guid.NewGuid(),
-                    //PlayId = id,
                     Audience = 30,
                 }
 

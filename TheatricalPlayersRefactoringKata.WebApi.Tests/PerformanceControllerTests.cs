@@ -26,7 +26,6 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
         public async Task PerformanceCreateAsync_ReturnsCreatedResult_WhenPerformanceIsCreatedSuccessfully()
         {
             var id = Guid.NewGuid();
-            // Arrange
             var request = new PerformanceRequest
             {
                 PlayId = Guid.NewGuid(),
@@ -43,10 +42,8 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
             _mediatorMock.Setup(m => m.Send(It.IsAny<Application.UseCases.Performance.Create.Command>(), default))
                 .ReturnsAsync(id);
 
-            // Act
             var result = await _controller.PerformanceCreateAsync(request);
 
-            // Assert
             var createdResult = Assert.IsType<CreatedResult>(result);
             Assert.Equal(201, createdResult.StatusCode);
             Assert.Equal(id, createdResult.Value);
@@ -55,7 +52,6 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
         [Fact]
         public async Task PerformanceUpdateAsync_ReturnsOkResult_WhenPerformanceIsUpdatedSuccessfully()
         {
-            // Arrange
             var id = Guid.NewGuid();
             var request = new PerformanceRequest
             {
@@ -73,10 +69,8 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
             _mediatorMock.Setup(m => m.Send(It.IsAny<Application.UseCases.Performance.Update.Command>(), default))
                 .ReturnsAsync(id);
 
-            // Act
             var result = await _controller.PerformanceUpdateAsync(id, request);
 
-            // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
             Assert.Equal(200, okResult.StatusCode);
             Assert.Equal(id, okResult.Value);
@@ -85,7 +79,6 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
         [Fact]
         public async Task GetAllAsync_ReturnsOkResult_WithListOfPerformances()
         {
-            // Arrange
             var pageOptions = new PageOptions { Page = 1, PageSize = 10 };
             var performanceList = new List<PerformanceResponse>
             {
@@ -96,10 +89,8 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
             _mediatorMock.Setup(m => m.Send(It.IsAny<Application.UseCases.Performance.GetAll.Command>(), default))
                 .ReturnsAsync(performanceList);
 
-            // Act
             var result = await _controller.GetAllAsync(pageOptions);
 
-            // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
             Assert.Equal(200, okResult.StatusCode);
             Assert.Equal(performanceList, okResult.Value);
@@ -108,7 +99,6 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
         [Fact]
         public async Task GetByIdAsync_ReturnsOkResult_WhenPerformanceIsFound()
         {
-            // Arrange
             var id = Guid.NewGuid();
             var performanceResponse = new PerformanceResponse
             {
@@ -120,10 +110,8 @@ namespace TheatricalPlayersRefactoringKata.WebApi.Tests
             _mediatorMock.Setup(m => m.Send(It.IsAny<Application.UseCases.Performance.GetById.Command>(), default))
                 .ReturnsAsync(performanceResponse);
 
-            // Act
             var result = await _controller.GetByIdAsync(id);
 
-            // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
             Assert.Equal(200, okResult.StatusCode);
             Assert.Equal(performanceResponse, okResult.Value);

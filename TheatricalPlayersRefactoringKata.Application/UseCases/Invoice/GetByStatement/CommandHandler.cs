@@ -64,7 +64,7 @@ namespace TheatricalPlayersRefactoringKata.Application.UseCases.Invoice.GetBySta
                     break;
 
                 case TypesPlays.History:
-                    int tragedyAmount = (lines / 10) * 100;
+                    int tragedyAmount = (lines / 10) * 100; // converter para centavos 
                     if (audience > 30)
                         tragedyAmount += (audience - 30) * 1000;
 
